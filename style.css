@@ -9,7 +9,7 @@ body {
 }
 
 #Title {
-    transform: translateY(-40%);
+    transform: translateY(-20%);
     font-size: 400%;
     text-align: center;
 }
@@ -23,7 +23,7 @@ body {
 }
 
 #TableDiv {
-    background-color: #E9F0D8;
+    background-color: #F0E192;
     text-align: center;
     position: relative;
     border: 2px solid;
