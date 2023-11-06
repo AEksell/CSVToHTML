@@ -30,3 +30,7 @@ body {
     width: 800px;
     height: 700px;
 }
+
+#SelectCSV {
+    margin-top: 2%;
+}
