@@ -34,3 +34,18 @@ body {
 #SelectCSV {
     margin-top: 2%;
 }
+
+#CSVTable {
+    margin-top: 5%;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+table td {
+    padding: 10px;
+    border: 2px solid;
+}
