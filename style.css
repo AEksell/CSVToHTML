@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&display=swap');
+
+* {
+    font-family: "DM Sans";
+}
+
+body {
+    background-color: #D8F0DA;
+}
+
+#Title {
+    transform: translateY(-40%);
+    font-size: 400%;
+    text-align: center;
+}
+
+
+/* THIS EXISTS SOLEY TO CENTER THE TABLE DIV */
+#CenterDiv { 
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#TableDiv {
+    background-color: #E9F0D8;
+    text-align: center;
+    position: relative;
+    border: 2px solid;
+    width: 800px;
+    height: 700px;
+}
