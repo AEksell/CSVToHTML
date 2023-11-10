@@ -22,8 +22,7 @@ def select_csv():
 
     #SELECTS THE CSV FILE                                        Only allows CSV files, might change to allow EXCL too if i can figure it out
     csv = fd.askopenfilename(title = "Select file",filetypes = (("CSV Files","*.csv"),))
-
-    datafile = pd.read_csv(csv)
+    datafile = pd.read_csv(csv, encoding='ISO-8859-2')
     CSVData = datafile.to_html(index=False) #Translates the CSV file into HTML *CODE*, (INDEX FALSE MAKES THE INPUT WORK FOR SOME REASON I DONT KNOW)
     
     textWidget = scrolledtext.ScrolledText(app, width=300, height=400) #Widget is a box where text can be put and can have its own scrollbar 
@@ -49,7 +48,7 @@ def select_csv():
         textWidget.configure(state='normal')
         nextCSV = fd.askopenfilename(title = "Select file",filetypes = (("CSV Files","*.csv"),))
 
-        nextData = pd.read_csv(nextCSV)
+        nextData = pd.read_csv(nextCSV, encoding='ISO-8859-2')
         newCSVData = nextData.to_html(index=False)
         
         textWidget.delete("1.0", tk.END)
